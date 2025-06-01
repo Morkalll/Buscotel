@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BUSCOTEL</title>
+        <link rel="stylesheet" href="estilos.css">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); </style>
+        <link rel="icon" href="imagenes/iconobuscotel.png" type="image/x-icon">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    </head>
+
+    <body>       
+        <header> 
+            <img src="imagenes/buscotel.png" alt="BUSCOTEL" class="logo" data-aos="zoom-in"  >
+          
+        
+            <form class="formBusqueda" data-aos="zoom-in">
+                <input type="text" id="destino" placeholder="¿A dónde vas? 🌍" required>
+                <input type="date" id="fechaCheckIn" placeholder="Entrada" required>
+                <input type="date" id="fechaCheckOut" placeholder="Salida" required>
+                <input type="number" min="1" id="cantidadAdultos" placeholder="Adultos 👨‍💼👩‍💼 " required>
+                <input type="number" min="0" id="cantidadNiños" placeholder="Niños 👦👧  " required>
+                <button type="submit" id="buscar">Buscar</button>
+            </form>
+            
+        
+            <ul id="listaHoteles">
+</ul>
+</header>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div id="mapa">
+            <iframe 
+            id ="mapaIframe"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6694.962604285054!2d-60.64383689016434!3d-32.96470142638802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHoteles!5e0!3m2!1ses!2sar!4v1746664641369!5m2!1ses!2sar"
+            width="600" 
+            height="450" 
+            style="border:0;"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="imagenHoteles">
+            
+            <img src="imagenes/rambaghPalace.jpg" alt="Hotel 1" data-aos="fade-right">
+            
+            <p> El aclamado <span style="color:#FFD700; font-weight: bold;">Rambagh Palace</span> se encuentra en la antigua residencia del maharajá de Jaipur, que presenta una arquitectura preciosa de estilo indio y unos jardines magníficos. Cuenta con piscina cubierta y al aire libre y ofrece servicios de spa completos.
+            Las habitaciones son amplias y están decoradas con tejidos maravillosos, alfombras elegantes y motivos decorativos en la pared pintados a mano. Todas tienen aire acondicionado, TV de pantalla plana, caja fuerte, minibar y baño moderno con ducha a ras de suelo y bañera separada.
+            Este hotel alberga el spa Jiva Grande, que cuenta con servicio de masajes. También ofrece gimnasio y sesiones de yoga con gurús experimentados. Además, los mayordomos del palacio pueden organizar paseos en antiguos carruajes de caballos por las noches. Hay aparcamiento gratuito.
+            En el The Rajput Room se sirven desayunos y comidas ligeras, mientras que en el Verandah se ofrecen meriendas tradicionales por las tardes, champán y cócteles antes de cenar. Entre otros locales de restauración, se encuentran el Suvarna Mahal, que prepara comida india, el Steam, de ambiente informal y al aire libre, y el Polo Bar, donde se sirven bebidas.
+            El Rambagh Palace es conocido como la "Joya de Jaipur". Se encuentra a unos 3,5 km del palacio de la ciudad, del Hawa Mahal y del Jantar Mantar. El aeropuerto de Jaipur está a 11 km.</p>
+            
+            <p> El elegante <span style="color:#FFD700; font-weight: bold;">Ritz-Carlton</span>, Hong Kong ofrece habitaciones de lujo con WiFi gratuita en plantas altas, desde la 102 hasta la 118. Se eleva sobre el puerto de Victoria y alberga el bar más alto del mundo y 5 restaurantes, entre ellos 2 con estrella Michelin.
+            Se encuentra en el edificio International Commerce Centre, justo encima de la estación de Kowloon, junto a la línea Airport Express y la estación de tren de alta velocidad Hong Kong West Kowloon. El aeropuerto internacional de Hong Kong está situado a 20 minutos en tren, mientras que los bares y restaurantes del distrito Central se hallan a menos de 9 minutos en tren. El centro comercial Tsim Sha Tsui está a solo 10 minutos en taxi.
+            Las habitaciones disponen de ventanales con vistas panorámicas al puerto de Victoria y camas cómodas con ropa de cama de 400 hilos y almohadas de plumas. El baño privado tiene bañera y ducha de efecto lluvia independientes. Las habitaciones también incluyen TV de pantalla plana, reproductor de DVD Blu-ray y cafetera Nespresso.
+            Se proporciona servicio de masajes. El establecimiento cuenta con piscina cubierta climatizada y un gimnasio bien equipado. Hay servicio de lavandería y de conserjería.
+            El restaurante italiano Tosca Di Angelo, galardonado con 1 estrella Michelin, sirve un innovador menú italiano. El restaurante Tin Lung Heen, galardonado con 2 estrellas Michelin, propone auténtica cocina cantonesa. El bar Almas Caviar ofrece una selección del mejor caviar del mundo en un lujoso lugar de reunión para antes y después de la cena. El Cafe 103 sirve comidas durante todo el día, almuerzos y cenas a la carta, así como meriendas. El The Lounge & Bar propone un buffet amplio para el desayuno, bar de ensaladas ecológicas para el almuerzo, meriendas tradicionales con té y cenas a la carta. El Ozone es el bar más alto del mundo, tiene vistas preciosas al puerto de Victoria y sirve tapas y bebidas refrescantes.</p>
+            
+            <img src="imagenes/ritzCarlton.avif" alt="Hotel 2" data-aos="fade-left">
+            <img src="imagenes/jwMariott.avif" alt="Hotel 3" data-aos="fade-right">
+            
+            <p>El animado y dinámico <span style="color: #FFD700; font-weight: bold;">JW Marriott Marquis Hotel</span>, distribuido en dos emblemáticas torres con 1.608 habitaciones, cuenta con gran variedad de 12 restaurantes, bares y salones galardonados y el sublime Saray Spa and Health Club. El hotel goza de una ubicación ideal entre el Dubai Mall y el Mall of the Emirates, junto a la estación de metro de Business Bay, y se encuentra justo al lado de la nueva ampliación del Dubai Water Canal. El JW Marriott Marquis Dubai ofrece WiFi gratuita y piscina al aire libre.
+            Sus 1.608 alojamientos y habitaciones lujosos presentan un diseño elegante y una decoración contemporánea. Las habitaciones son amplias y disponen de TV de pantalla plana, ventanales y escritorio. El baño está equipado con bañera y albornoces.
+            Los clientes pueden disfrutar de un buffet local e internacional muy variado. El galardonado restaurante Kitchen6 ofrece una experiencia de cocina internacional, con 6 estaciones de cocina interactivas donde se prepara una extraordinaria selección de platos del mundo. El Bridgewater Tavern es un bar de deportes atrevido y sirve comida experimental. El Bridgewater Tavern combina restaurante y bar, redefine la cultura de los bares de deportes y ofrece un lugar ideal para los verdaderos amantes de la comida y la emoción.
+            El famoso restaurante Kitchen6 sirve buffets de platos internacionales. El Rang Mahal ofrece un auténtico e intenso viaje culinario. Los clientes podrán contemplar el perfil urbano de Dubái mientras toman un cóctel en el bar Vault, situado en la planta superior.
+            Además, los clientes podrán utilizar la piscina al aire libre o el hammam relajante del centro de spa Saray. El mostrador de información turística organiza excursiones por los alrededores. El hotel también cuenta con servicio de aparcacoches.
+            El alojamiento se encuentra a 20 minutos en coche del parque acuático Wild Wadi Waterpark y a 17 km del club de golf Emirates. El aeropuerto internacional de Dubái está situado a 25 minutos en coche del JW Marriott Marquis. Se proporciona servicio de traslado gratuito en autobús al centro comercial Dubai Mall.</p>
+            
+            <p> El famoso <span style="color: #FFD700; font-weight: bold;">Ikos Andalusia</span> se encuentra en Estepona, a 10 min a pie de Playa de Guadalmansa, y ofrece alojamiento con centro de fitness, parking privado gratis, jardín y terraza. El alojamiento ofrece restaurante y también tiene bar, bañera de hidromasaje y hammam. El resort dispone de piscina al aire libre, sauna, ocio nocturno y club infantil.
+            El resort ofrece habitaciones con aire acondicionado, escritorio, cafetera, nevera, minibar, caja fuerte, TV de pantalla plana y baño privado con bañera o ducha. Hay wifi gratis, y algunas habitaciones disponen de balcón. En Ikos Andalusia, todas las habitaciones disponen de ropa de cama y toallas.
+            Se puede usar el centro de spa y bienestar, que cuenta con piscina cubierta. Se puede jugar al ping-pong y al tenis en el alojamiento, y la zona es ideal para practicar piragüismo y ciclismo.
+            El personal, que habla alemán, inglés, español y francés, ofrece información de forma ininterrumpida en la recepción.
+            Golf La Duquesa está a 29 km del alojamiento, y Campo de Golf La Cala está a 50 km. </p>
+
+            <img src="imagenes/IkosAndalucia.avif" alt="Hotel 4" data-aos="fade-left">
+        
+        </div>
+
+        
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
